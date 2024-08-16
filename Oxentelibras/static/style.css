@@ -1,0 +1,130 @@
+body {
+    background-color:rgba(237, 230, 130, 1);
+}
+
+button{
+    background-color: rgba(255, 145, 77, 1);
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 15px;
+    cursor:pointer
+}
+
+h1{
+    font-size: 44px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.logo_ufersa{
+    margin: left 20px;
+    margin: top 20px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    max-width: 55px;
+    max-height: 65px;
+    float: left;
+
+    img{
+        max-height: 45px;
+        justify-content: center;
+    }
+}
+#pagina_principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 25px;
+
+    input{
+        margin: 100px 50px;
+        background-color: transparent;
+        border-radius: 12px;
+        border: 2px solid black;
+        padding: 10px 50px;
+    }
+
+    #menu_geral{
+        display:flex;
+        flex-direction:row-reverse;
+        
+    }
+
+    #menu_botoes{
+        display: flex;
+        justify-content: center;
+        align-items: right;
+        flex-direction: column;
+        float:right;
+        padding-left: 20px;
+        
+        button{
+            background-color: rgba(255, 145, 77, 1);
+            border-radius: 12px;
+            border: 2px solid black;
+            padding: 15px;
+            margin: 20px;
+        }
+    }
+    #mapa{
+        display: flex;
+        float:left;
+        padding-right: 20px;
+    }
+    }
+
+    #xilo1{
+        margin-right: 42%;
+    }
+    #xilo2{
+        margin-left: 42%;
+    }
+
+    #barra_pesquisa{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    #barra_pesquisa i {
+        color: black;
+    }
+
+
+
+.table_tela2{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    flex-direction: column;
+
+    table{
+    padding:20px;
+    margin:3px;
+    }
+
+    tr,th,td{
+        border: solid black 2px;
+        padding:20px;
+        margin:3px;
+    }
+}

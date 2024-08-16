@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Palavra Pesquisada</title>
+</head>
+<body>
+    <div id="pagina_principal">
+    <div id="titulo">
+    <h1>Oxente Libras</h1>
+    <h3>O site mais arretado do Brasil</h3>
+    </div>
+    <div class="table_tela2">
+    <table>
+    <thead>
+        <tr>
+            <th>Sugestao</th>
+            <th>Contexto</th>
+            <th>Email</th>
+            <th> Confirmar Sugestão</th>
+        </tr>
+    </thead>
+    <tbody>
+            {% if not sugestoes  %}
+                <h3> Sem sugestoes pendentes</h3>
+                <h3> Favor retornar a página inicial</h3>
+            {% endif %}
+            {%for row in sugestoes %}
+            <tr>
+              <td>{{row[1]}}</td>
+              <td>{{row[2]}}</td>
+              <td>{{email}}</td>
+              <td>
+              <form action="/inserir" method="post">
+                  <input name="palavra" value={{row[1]}}>
+                  <input name="definicao" value={{row[2]}}>
+                <button type="submit"> inserir </button>
+              </form>
+              </td>
+
+            </tr>
+            {% endfor %}
+    </tbody>
+    </table>
+    </div>
+        <form action="/retorno" method="post">
+        <button type="submit">Página inicial </button>
+        </form>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Oxente Libras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}'">
+    -->
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
+</head>
+<body>
+
+    <div id="pagina_principal">
+    <div id="titulo">
+    <h1>Oxente Libras</h1>
+    <h3>O site mais arretado do Brasil</h3>
+    </div>
+
+    <div id="conteudo">
+        <div id="barra_pesquisa">
+            <form action="/sugestao" method="post">
+                <input type="text" id="sugerir_palavra" name="sugerir_palavra" placeholder="Palavra Sugerida">
+                <input type="text" id="definicao" name="definicao" placeholder="Definição Expressão">
+                <input type="text" id="email" name="email" placeholder="Email Contato">
+                <button type="submit"><b>Sugerir</b></button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+    <img src="../static/img/xilogravura2.png" id="xilo1">
+    <img src="../static/img/xilogravura1.png" id="xilo2">
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Palavra Pesquisada</title>
+</head>
+<body>
+    <div id="pagina_principal">
+    <div id="titulo">
+    <h1>Oxente Libras</h1>
+    <h3>O site mais arretado do Brasil</h3>
+    </div>
+    <div class="table_tela2">
+    <table>
+    <thead>
+        <tr>
+            <th>Palavra</th>
+            <th>Definicao</th>
+        </tr>
+    </thead>
+    <tbody>
+            {% if not resultado  %}
+                <h3> Palavra não encontrada</h3>
+                <h3> Pesquise novamente ou sugira a palavra</h3>
+            {% endif %}
+            {%for row in resultado %}
+            <tr>
+              <td>{{row[1]}}</td>
+              <td>{{row[2]}}</td>
+            </tr>
+            {% endfor %}
+    </tbody>
+    </table>
+    </div>
+        <form action="/retorno" method="post">
+        <button type="submit">Pesquisar Novamente </button>
+        </form>
+</body>
+
+</html>

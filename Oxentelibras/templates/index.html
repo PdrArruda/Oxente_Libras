@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Oxente Libras</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--
+    <link rel='stylesheet' href="{{ url_for('static', filename='style.css') }}'">
+    -->
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css'>
+</head>
+<body>
+    <button class="logo_ufersa"><a><img src="../static/image/BrasaoUfersa.png" class="logo_ufersa"></a></button>
+
+    <div id="pagina_principal">
+    <div id="titulo">
+    <h1>Oxente Libras</h1>
+    <h3>O site mais arretado do Brasil</h3>
+    </div>
+
+    <div id="conteudo">
+        <div id="barra_pesquisa">
+            <form action="/pesquisa" method="post">
+                <input type="text" id="pesquisa_palavra" name="pesquisa_palavra" placeholder="Pesquisar Palavra">
+                <button type="submit"><b>Buscar</b></button>
+            </form>
+        </div>
+        <div id="menu_geral">
+        <div id="menu_botoes">
+            <form action="/formsugestao" method="post">
+                <button><b>Sugerir Palavra</b></button>
+            </form>
+        </div>
+        <div id="mapa">
+            <img src="../static/img/brasil.png">
+        </div>
+        </div>
+        <!--
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        -->
+
+    </div>
+
+    </div>
+
+    <img src="../static/img/xilogravura2.png" id="xilo1">
+    <img src="../static/img/xilogravura1.png" id="xilo2">
+</body>
+</html>
