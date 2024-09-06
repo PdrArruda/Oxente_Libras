@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, flash, redirect, url_for
-from flask_sqlalchemy import SQLAlchemy
 import psycopg2
 
 app = Flask(__name__)
@@ -9,8 +8,6 @@ app.secret_key = 'supersecretkey'
 def db_conn():
     conn = psycopg2.connect(database="OxenteLibras", host="localhost", user="postgres", password="GOLDgols.2024", port="5432")
     return conn
-
-
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index')
